@@ -10,4 +10,5 @@
     <color name="background_BottomAppBar">#181922</color>
     <color name="background_BottomAppBar2">#B3B3B3</color>
     <color name="background_BottomNavigationView">#00000000</color>
+    <color name="background_fragment">#111111</color>
 </resources>

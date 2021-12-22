@@ -1,16 +1,130 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".HomeFragment">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
-        android:textSize="20sp"
-        android:text="@string/hello_blank_fragment" />
+        android:background="@color/background_fragment">
 
-</FrameLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/ngang1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.08" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/ngang2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.15" />
+
+            <TextView
+                android:id="@+id/tvGenres"
+                android:layout_width="0sp"
+                android:layout_height="0sp"
+                android:gravity="center_vertical|left"
+                android:text="@string/genres"
+                android:textSize="20sp"
+                android:layout_marginLeft="10sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/ngang2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/ngang1" />
+
+            <TextView
+                android:id="@+id/tvTopCharts"
+                android:layout_width="0sp"
+                android:layout_height="0sp"
+                android:gravity="center_vertical|left"
+                android:text="@string/topcharts"
+                android:layout_marginLeft="10sp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/ngang4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/ngang3" />
+
+            <TextView
+                android:id="@+id/tvHelloName"
+                android:layout_width="0sp"
+                android:layout_height="0sp"
+                android:gravity="center_vertical|left"
+                android:layout_marginLeft="10sp"
+                android:text="Hello Name"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/ngang1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/vertical_bell"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.9" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerGenres"
+                android:layout_width="0sp"
+                android:layout_height="0sp"
+                app:layout_constraintBottom_toBottomOf="@id/ngang3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/ngang2" />
+
+            <ImageView
+                android:id="@+id/imgBell"
+                android:layout_width="0sp"
+                android:layout_height="0sp"
+                android:scaleType="center"
+                android:src="@drawable/bell"
+                app:layout_constraintBottom_toBottomOf="@id/ngang1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/vertical_bell"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/ngang3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.4" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/ngang4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.47" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/ngang5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.72" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerTopCharts"
+                android:layout_width="0sp"
+                android:layout_height="0sp"
+                app:layout_constraintBottom_toBottomOf="@id/ngang5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/ngang4"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </RelativeLayout>
+</layout>
