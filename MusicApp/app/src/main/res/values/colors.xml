@@ -7,8 +7,9 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="background_BottomAppBar">#181922</color>
+    <color name="background_BottomAppBar">#11141c</color>
     <color name="background_BottomAppBar2">#B3B3B3</color>
     <color name="background_BottomNavigationView">#00000000</color>
-    <color name="background_fragment">#111111</color>
+    <color name="background_fragment">#141721</color>
+    <color name="color_hint">#7C7C7C</color>
 </resources>
