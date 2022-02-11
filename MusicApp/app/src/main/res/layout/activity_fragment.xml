@@ -5,17 +5,17 @@
     android:id="@+id/body_container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FragmentActivity">
+    tools:context=".activity.FragmentActivity">
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_gravity="bottom"
-        android:background="@drawable/custom"
-        app:itemIconTint="@color/custom_bottom_menu"
-        app:itemTextColor="@color/custom_bottom_menu"
-        app:menu="@menu/bottom_menu" />
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_gravity="bottom"
+    android:background="#FF11141c"
+    app:itemIconTint="@color/custom_bottom_menu"
+    app:itemTextColor="@color/custom_bottom_menu"
+    app:menu="@menu/bottom_menu" />
 
 </RelativeLayout>

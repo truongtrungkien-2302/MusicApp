@@ -1,4 +1,4 @@
-package com.android45.musicapp;
+package com.android45.musicapp.activity;
 
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -9,6 +9,11 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
+import com.android45.musicapp.R;
+import com.android45.musicapp.fragment.FavoriteFragment;
+import com.android45.musicapp.fragment.HomeFragment;
+import com.android45.musicapp.fragment.SearchFragment;
+import com.android45.musicapp.fragment.UserFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class FragmentActivity extends AppCompatActivity {
